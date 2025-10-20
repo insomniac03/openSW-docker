@@ -1,3 +1,4 @@
+# 베이스 이미지를 작성
 FROM ubuntu:18.04
 # 아파치2 패키지를 설치
 RUN apt-get update && \
@@ -16,3 +17,4 @@ chmod 744 /webapp/run_http.sh
 EXPOSE 80
 # RUN 명령어로 작성된 셸 스크립트를 컨테이너가 동작할 때 실행
 CMD /webapp/run_http.sh
+
